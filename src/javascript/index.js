@@ -24,8 +24,7 @@ let outcomes = {
     SP: "User",
     SS: "Draw",
 }
-let cpuImages = ["./public/Images/Rock.png", "./public/Images/Paper.png", "./public/Images/Scissor.png"]
-
+let cpuImages = [optionsImages[0].querySelector("img").src, optionsImages[1].querySelector("img").src, optionsImages[2].querySelector("img").src]
 
 optionsImages.forEach((Img, index) => {
     Img.addEventListener('click', (e) => startGame(index, e))
